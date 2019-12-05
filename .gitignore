@@ -1,0 +1,9 @@
+tasks.md
+trash.py
+sql_dump.py
+*.sql
+__pycache__
+tox.ini
+*.cfg
+dump_text_snippet.py
+*output/*
