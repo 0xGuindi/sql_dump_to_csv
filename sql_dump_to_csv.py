@@ -29,8 +29,9 @@ def process_chunks(chunks):
         if table_name in tables:
             # append to table content
             tables[table_name] += rows
+            tables[table_name] += '\n'
         else:
-            tables[table_name] = table_header + '\n' + rows
+            tables[table_name] = table_header + '\n' + rows + '\n'
     return tables
 
 def process_chunk(chunk):
