@@ -57,12 +57,12 @@ def extract_rows(lines):
 
 def write_to_csv(table_name, table_content):
     file_name = table_name + '.csv'
-    with open(file_name, 'w') as f:
+    with open(file_name, 'w', encoding='utf-8') as f:
         f.write(table_content)
         f.close()
 
 def read_file(fn):
-    with open(fn, 'r') as f:
+    with open(fn, 'r', encoding='utf-8') as f:
         content = f.read()
         f.close()
     return content
